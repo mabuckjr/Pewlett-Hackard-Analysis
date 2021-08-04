@@ -182,3 +182,34 @@ INNER JOIN dept_emp AS de
 ON (ce.emp_no = de.emp_no)
 INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no);
+
+SELECT * FROM departments;
+SELECT * FROM retirement_info;
+DROP TABLE sales_info;
+
+-- Sales Department retirees	
+SELECT ri.emp_no,
+ri.first_name,
+ri.last_name,
+de.dept_name
+INTO sales_only_info
+FROM retirement_info as ri
+INNER JOIN dept_info AS de
+ON (ri.emp_no = de.emp_no)
+WHERE (dept_name BETWEEN 'Sales' AND 'Sales' )
+ORDER BY emp_no ASC;
+
+
+-- Sales and Development Department retirees	
+SELECT ri.emp_no,
+ri.first_name,
+ri.last_name,
+de.dept_name
+INTO sales_development_info
+FROM retirement_info as ri
+INNER JOIN dept_info AS de
+ON (ri.emp_no = de.emp_no)
+WHERE dept_name IN ('Sales', 'Development')
+ORDER BY emp_no ASC;
+
+SELECT * FROM sales_development_info;
