@@ -24,7 +24,7 @@ For the other question, it's tough to say. If mentors are able to train multiple
 
 For further analysis, it would be helpful to add create a couple of different queries to understand the positions of the potential mentors. I would create a query like the one below:
 
-'''
+``
 -- Deliverable 3 Queries
 -- Query 1: Mentor title count
 SELECT COUNT (title),
@@ -33,7 +33,7 @@ me.title
 FROM mentorship_eligibility as me
 GROUP BY me.title
 ORDER BY COUNT (me.title) DESC;
-'''
+``
 
 Which creates this table below:
 
