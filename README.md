@@ -23,6 +23,7 @@ What I found was that over 90,000 roles needed to be filled, and these positions
 For the other question, it's tough to say. If mentors are able to train multiple employees at the same time, say through seminars and infrequent individual time spent with new employees, than it's definitely possible. If mentors are expected to spend much more individual time with future employees though, it likely wouldn't work due to only 1,549 eligible mentors. 
 
 For further analysis, it would be helpful to add create a couple of different queries to understand the positions of the potential mentors. I would create a query like the one below:
+
 '''
 -- Deliverable 3 Queries
 -- Query 1: Mentor title count
@@ -33,6 +34,7 @@ FROM mentorship_eligibility as me
 GROUP BY me.title
 ORDER BY COUNT (me.title) DESC;
 '''
+
 Which creates this table below:
 
 ![]()
