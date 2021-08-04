@@ -14,8 +14,6 @@ ON (e.emp_no = ti.emp_no)
 WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY emp_no ASC;
 
-SELECT * FROM retirement_titles;
-
 -- Use Dictinct with Orderby to remove duplicate rows (Unique Titles)
 SELECT DISTINCT ON (emp_no) re.emp_no,
 re.first_name,
@@ -52,3 +50,20 @@ ON (e.emp_no = ti.emp_no)
 WHERE (de.to_date = '9999-01-01')
 	AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY (e.emp_no) ASC;
+
+-- Deliverable 3 Queries
+-- Query 1: Mentor title count
+SELECT COUNT (title),
+me.title
+INTO mentor_title
+FROM mentorship_eligibility as me
+GROUP BY me.title
+ORDER BY COUNT (me.title) DESC;
+
+-- Query 2: Finding mentors who've held multiple positions
+SELECT re.emp_no, re.first_name, re.last_name, COUNT(*)
+INTO mentors_multi_pos
+FROM retirement_titles AS re
+GROUP BY re.emp_no, re.first_name, re.last_name
+HAVING COUNT (*) > 1
+ORDER BY re.emp_no ASC;
