@@ -22,12 +22,20 @@ What I found was that over 90,000 roles needed to be filled, and these positions
 
 For the other question, it's tough to say. If mentors are able to train multiple employees at the same time, say through seminars and infrequent individual time spent with new employees, than it's definitely possible. If mentors are expected to spend much more individual time with future employees though, it likely wouldn't work due to only 1,549 eligible mentors. 
 
-For further analysis, it would be helpful to add create a couple of different queries to understand the number of of potential mentors and what positions they currently hold. I would create a query like the one below:
+For further analysis, it would be helpful to add create a couple of different queries to understand the number of of potential mentors and what positions they currently hold. This can help Pewlett Hackard understand the distribution of mentors to mentees per field. I would create a query like the one below:
 
-![]()
+![](https://github.com/mabuckjr/Pewlett-Hackard-Analysis/blob/main/Resources/mentor_title_query.PNG)
 
-Which creates this table below:
+This query sorts the mentors by position they hold, which creates this table below:
 
-![]()
+![](https://github.com/mabuckjr/Pewlett-Hackard-Analysis/blob/main/Resources/mentor_title_table.PNG)
 
-Another query that would help management understand would be one that
+Another query that would help management understand would be one that shows which retiring individuals have held multiple positions at Pewlett Hackard. These employees were ambitious and loyal, so it would be great to prioritize these individuals as mentors for new candidates. The query could look like this:
+
+![](https://github.com/mabuckjr/Pewlett-Hackard-Analysis/blob/main/Resources/mentors_multi_pos_query.PNG)
+
+And then creates this table below: 
+
+![](https://github.com/mabuckjr/Pewlett-Hackard-Analysis/blob/main/Resources/mentors_multi_pos_table.PNG)
+
+All in all, it's a good thing that Pewlett Hackard is getting ahead of this, because many of their employees are retiring. However, the mentorship program that they plan to use could really help mitigate the effects of the "silver tsunami." It is important to look at the data from multiple angles to make sure that this program works well, and that new employees know how to fill the responsibilities of those that are retiring.
