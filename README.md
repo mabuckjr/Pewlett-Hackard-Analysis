@@ -5,6 +5,7 @@ With the upcoming "Silver Tsunami" occurring in many industries, Pewlett-Hackard
 
 ## Results
 Below were the major findings from the two deliverables in this project:
+
 ![](https://github.com/mabuckjr/Pewlett-Hackard-Analysis/blob/main/Resources/retiring_titles.PNG)
 - Over 90,000 employees will be retiring in the next few years.
 - Of those 90,000, 29,414 are Senior Engineers, 28,254 are Senior Staff, 14,222 are Engineers, and 12,243 are Staff. With over 50,000 Senior employees and over 40,000 of both total engineers and staff retiring soon, the mentorship program should focus on training staff and engineers of all levels more than other positions down the list.
