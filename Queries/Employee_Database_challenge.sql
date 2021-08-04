@@ -1,5 +1,4 @@
 -- Deliverable 1
-
 -- Retirement Titles Query
 SELECT e.emp_no,
 e.first_name,
@@ -14,13 +13,13 @@ ON (e.emp_no = ti.emp_no)
 WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY emp_no ASC;
 
--- Use Dictinct with Orderby to remove duplicate rows (Unique Titles)
+-- Use Dictinct with Orderby to remove duplicate rows
 SELECT DISTINCT ON (emp_no) re.emp_no,
 re.first_name,
 re.last_name,
 re.title
 
-INTO unique_retirement_titles
+INTO unique_titles
 FROM retirement_titles as re
 ORDER BY emp_no ASC, to_date DESC;
 
