@@ -26,12 +26,19 @@ For further analysis, it would be helpful to add create a couple of different qu
 
 ``
 -- Deliverable 3 Queries
+
 -- Query 1: Mentor title count
+
 SELECT COUNT (title),
+
 me.title
---INTO mentor_title
+
+INTO mentor_title
+
 FROM mentorship_eligibility as me
+
 GROUP BY me.title
+
 ORDER BY COUNT (me.title) DESC;
 ``
 
