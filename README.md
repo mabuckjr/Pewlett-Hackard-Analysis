@@ -5,9 +5,19 @@ With the upcoming "Silver Tsunami" occurring in many industries, Pewlett-Hackard
 
 ## Results
 Below were the major findings from the two deliverables in this project:
+![]()
 - Over 90,000 employees will be retiring in the next few years.
 - Of those 90,000, 29,414 are Senior Engineers, 28,254 are Senior Staff, 14,222 are Engineers, and 12,243 are Staff. With over 50,000 Senior employees and over 40,000 of both total engineers and staff retiring soon, the mentorship program should focus on training staff and engineers of all levels more than other positions down the list.
 - Most of the employees have worked with Pewlett-Hackard for at least 20 years, so they will be very knowledgable on the history of the company. Some have even moved up into more senior roles while working here, which means that they will be great candidates for teaching new ambitious employees.
 - Of those retiring, we found 1,549 candidates who are eligible to be in the mentorship program.
 
 ## Summary
+From these results, I went to investigate the answers to the two questions below:
+- How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+- Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
+What I found was that over 90,000 roles needed to be filled, and these positions included Senior Engineers, Senior Staff, Engineers, Staff, Technique Leaders, Assistants Engineers, and Managers. The first 4 have over 80,000 of those retirable employees. 
+
+For the other question, it's tough to say. If mentors are able to train multiple employees at the same time, say through seminars and infrequent individual time spent with new employees, than it's definitely possible. If mentors are expected to spend much more individual time with future employees though, it likely wouldn't work due to only 1,549 eligible mentors. 
+
+For further analysis, it would be helpful to add create a query 
